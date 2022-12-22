@@ -1,0 +1,114 @@
+/*------- reinicio de medidas --------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*---------portada----------*/
+h1 {
+    font-size: 30px;
+    color: red;
+    text-shadow: 5px 1px 1px black;
+}
+
+.portada img {
+    width: 70px;
+    height: 80px;
+    padding-left: 10px;
+
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(gray, black);
+    width: 100 vw;
+    height: 100px;
+}
+
+
+
+.listas {
+    display: flex;
+    justify-content:space-around;  
+    padding: 20px;
+    background:linear-gradient(90deg,red,rgb(204, 95, 95) 50% );
+  
+}
+
+.listas li {
+    font-size: 20px;
+    list-style: none;
+
+}
+.lista-1
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+   
+}
+.lista-2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.lista-3
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.lista-4
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.lista-1:hover
+{
+    color: white;
+}
+.lista-2:hover
+{
+    color: white;
+}
+.lista-3:hover
+{
+    color: white;
+}
+.lista-4:hover
+{
+    color: white;
+}
+ 
+/*-------seccion-noticias-------*/
+.noticias
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.noticias h4
+{
+    background-color: grey;
+    width: 125px;
+}
+.noticias img
+{
+    width: 500px;
+}
+hr
+{
+    margin: 10px;
+}
