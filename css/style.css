@@ -31,6 +31,7 @@ h1 {
 
 
 
+
 .listas {
     display: flex;
     justify-content:space-around;  
@@ -111,4 +112,24 @@ h1 {
 hr
 {
     margin: 10px;
+}
+
+.formulario
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+input 
+{
+    font-size: 20px;
+  
+    
+}
+label
+{
+    font-size: 30px;
+    font-family:  'Fasthand', cursiva;
+    color: red;
 }
