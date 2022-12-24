@@ -317,14 +317,17 @@ label {
 .partidos
 {
     display: grid;
+    
+   
+    
     grid-template-columns: 90px 90px;
     grid-template-rows:30px 60px ;
     grid-template-areas: "titulo titulo"
                           "escudo subtitulo";
     border: 1px solid black;
     width: 190px;
-    margin: 20px;
-    padding: 5px;                   
+   padding: 5px;
+                    
 }
 
 .partidos h4 
@@ -367,8 +370,160 @@ label {
 
 
 
+.partidos-1
+{
+    display: grid;
+    
+    grid-template-columns: 90px 90px;
+    grid-template-rows:30px 60px ;
+    grid-template-areas: "titulo titulo"
+                          "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+    padding: 5px;
+                     
+}
+
+.partidos-1 h4 
+{
+    
+    grid-area: titulo  ;
+    justify-self: center;
+    
+}
 
 
+.river-1 img 
+{
+   
+    
+    grid-area: escudo;
+    align-self: center;
+    
+ }
+.partidos-1 h5 
+{
+    grid-area: subtitulo;
+   
+    align-self: flex-start;
+    padding-top: 10px;
+    
+    
+    
+}
+.partidos-1 h6 
+{
+    
+    grid-area: subtitulo;
+    align-self: center;
+    gap: 2px;
+    
+    
+}
+
+
+.partidos-2
+{
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows:30px 60px ;
+    grid-template-areas: "titulo titulo"
+                          "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+  
+    padding: 5px;                   
+}
+
+.partidos-2 h4 
+{
+    
+    grid-area: titulo  ;
+    justify-self: center;
+    
+}
+
+
+.river-2 img 
+{
+   
+    
+    grid-area: escudo;
+    align-self: center;
+    
+ }
+.partidos-2 h5 
+{
+    grid-area: subtitulo;
+   
+    align-self: flex-start;
+    padding-top: 10px;
+    
+    
+    
+}
+.partidos-2 h6 
+{
+    
+    grid-area: subtitulo;
+    align-self: center;
+    gap: 2px;
+    
+    
+}
+.central    
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 5px;
+    padding: 10px;
+}
+
+/*-----------seccion-reserva-----------*/
+.noticias-reserva
+{
+    font-size: 20px;
+    color: rgb(41, 40, 40);
+    margin-left: 10px;
+    padding-top:10px ;
+}
+.reserva img
+{
+ width: 374px;
+
+}
+.reserva h4 
+{
+    background-color: grey;
+    width: 120px;
+    
+}
+.reserva h2
+{
+    color: red;
+}
+
+.reserva-1
+{
+    margin-top: 10px;
+}
+.reserva-1 img
+{
+ width: 374px;
+
+}
+.reserva-1 h4 
+{
+    background-color: grey;
+    width: 120px;
+    
+}
+.reserva-1 h2
+{
+    color: red;
+}
 
 
 
