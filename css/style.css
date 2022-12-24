@@ -15,11 +15,12 @@
     width: 100vw;
     height: 100px;
 }
+
 h1 {
     font-size: 30px;
     color: red;
     text-shadow: 5px 1px 1px black;
-  
+
 }
 
 .portada img {
@@ -56,7 +57,7 @@ h1 {
     font-size: 20px;
     list-style: none;
     text-decoration: none;
-    color:black;
+    color: black;
     display: flex;
     gap: 5px;
 
@@ -95,20 +96,20 @@ h1 {
 
 
 }
-.list-1:hover 
-{
+
+.list-1:hover {
     color: white;
 }
-.list-2:hover 
-{
+
+.list-2:hover {
     color: white;
 }
-.list-3:hover 
-{
+
+.list-3:hover {
     color: white;
 }
-.list-4:hover 
-{
+
+.list-4:hover {
     color: white;
 }
 
@@ -228,69 +229,21 @@ label {
 }
 
 /*-----------footer-----------*/
-.entero
-{
-    background:black;
+.entero {
+    background: black;
     width: 100vw;
     height: 200px;
     display: flex;
-    
+
 }
-.pie-pagina
-{
+
+.pie-pagina {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-
-
-.direcciones
-{
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    list-style: none;
-    text-decoration: none;
-    padding: 5px;
-    gap:5px;
-    color: white;
-}
-.telefonos
-{
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    list-style: none;
-    text-decoration: none;
-    padding: 5px;
-    gap:5px;
-    color: white;
-}
-.whatsapp
-{
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    list-style: none;
-    text-decoration: none;
-    padding: 5px;
-    gap: 5px;
-    color: white;
-}
-.instagram
-{
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    list-style: none;
-    text-decoration: none;
-    padding: 5px;
-    gap: 5px;
-    color: white;
-}
-.facebook
-{
+.direcciones {
     display: flex;
     flex-direction: row;
     font-size: 15px;
@@ -301,6 +254,115 @@ label {
     color: white;
 }
 
+.telefonos {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    gap: 5px;
+    color: white;
+}
+
+.whatsapp {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    gap: 5px;
+    color: white;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    gap: 5px;
+    color: white;
+}
+
+.facebook {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    gap: 5px;
+    color: white;
+}
+
+/*------------header-futbol-----------*/
+.header-futbol 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: red;
+}
+.header-futbol h2
+{
+    font-size: 20px;
+    
+}
+
+/*-------seccion-futbol------------*/
+.partidos
+{
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows:30px 60px ;
+    grid-template-areas: "titulo titulo"
+                          "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+    margin: 20px;
+    padding: 5px;                   
+}
+
+.partidos h4 
+{
+    
+    grid-area: titulo  ;
+    justify-self: center;
+    
+}
+
+
+.river img 
+{
+   
+    
+    grid-area: escudo;
+    align-self: center;
+    
+ }
+.partidos h5 
+{
+    grid-area: subtitulo;
+   
+    align-self: flex-start;
+    padding-top: 10px;
+    
+    
+    
+}
+.partidos h6 
+{
+    
+    grid-area: subtitulo;
+    align-self: center;
+    gap: 2px;
+    
+    
+}
 
 
 
@@ -311,18 +373,17 @@ label {
 
 
 
-
+/*-------modo responsive----------*/
 @media (min-width:375px) {
-    .portada h1
-    {
+    .portada h1 {
         transform: translate(350px);
         transition: 10s;
-        
-    } 
-    .portada img 
-    {
+
+    }
+
+    .portada img {
         transform: translate(900px);
-        transition: 6s; 
+        transition: 6s;
     }
 
 
@@ -364,22 +425,22 @@ label {
         font-family: 'Fasthand', cursiva;
         color: red;
     }
-   .entero 
-   {
-    display: flex;
-    justify-content: space-around;
-    
-   }
-   .pie-pagina li 
-   {
-    font-size: 20px;
-    
-   }
-   .entero img
-   {
-    border-radius: 100%;
-    transform: translate(250px)  rotate(360deg) ;
-    translate: 60px 8px ;
-    transition:15s;
-   }
+
+    .entero {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .pie-pagina li {
+        font-size: 20px;
+
+    }
+
+    .entero img {
+        border-radius: 100%;
+        transform: translate(250px) rotate(360deg);
+        translate: 60px 8px;
+        transition: 15s;
+    }
 }
