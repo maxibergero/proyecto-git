@@ -687,6 +687,88 @@ border-radius: 100%;
   gap: 10px;
 }
 
+/*-------------seccion-socio---------------*/
+.socio 
+{
+    display: flex;
+}
+.socio h2
+{
+    font-size: 60px;
+    margin-left: 30px;
+    color: rgb(250, 252, 252);
+
+    position: absolute;
+    align-self: flex-end;
+    transform:translate(300px);
+    transition: 9s;
+}
+.carnet  
+{
+    display: flex;
+}
+.carnet p 
+{
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 800px;
+}
+.img-carnet
+{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.listas-carnet
+{
+    padding-top: 20px;
+  
+    display: flex;
+    flex-direction: column;
+}
+.listas-carnet h3 
+{
+    font-size: 30px;
+    padding: 20px;
+}
+.listas-carnet li 
+{
+    font-size: 20px;
+    padding: 20px;
+}
+.listas-carnet iframe
+{
+    width:300px ;
+    height: 300px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+   
+   
+    
+}
+
+.footer-carnet
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: 100vw;
+    height: 30vh;
+}
+.footer-carnet img 
+{
+   object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
 
 
 
