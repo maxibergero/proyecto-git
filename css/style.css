@@ -526,6 +526,84 @@ label {
 }
 
 
+.reserva-2
+{
+    margin-top: 10px;
+}
+.reserva-2 img
+{
+ width: 374px;
+
+}
+.reserva-2 h4 
+{
+    background-color: grey;
+    width: 120px;
+    
+}
+.reserva-2 h2
+{
+    color: red;
+}
+
+/*----------------etiquetas-------------------*/
+.etiquetas h2
+{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.etiquetas a 
+{
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*---------------footer----------------*/
+
+.riv 
+{
+    background-color: rgb(5, 1, 1);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.riv img 
+{
+width: 80px;
+height: 80px;
+margin-top: 20px;
+border-radius: 100%;
+
+}
+.riv p 
+{
+    color: white;
+    padding: 30px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------modo responsive----------*/
@@ -598,4 +676,62 @@ label {
         translate: 60px 8px;
         transition: 15s;
     }
+    .header-futbol
+    {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header-futbol h2
+    {
+        font-size: 50px;
+    }
+    .central
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+        padding: 20px;
+    }
+    hr 
+    {
+        display: none;
+    }
+    .noticias-reserva
+    {
+        display: none;
+    }
+    .contenido-noticias
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+    }
+    .etiquetas h2 
+    {
+        font-size: 30px;
+    }
+    .etiquetas a 
+    {
+        font-size: 20px;
+        margin: 10px;
+        
+    }
+    .riv
+    {
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
 }
