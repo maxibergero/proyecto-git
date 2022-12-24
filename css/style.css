@@ -636,17 +636,45 @@ border-radius: 100%;
     margin: 10px;
     gap: 10px;
 }
+.secundarios iframe:hover 
+{
+    border:3px solid red;
+} 
+
+
+
 .footer-mult
 {
     background-color: black;
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
+   
+}
+.footer-mult h2 
+{
+    color: rgb(248, 244, 244);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.footer-mult h2:hover
+{
+ transition: 2s;   
+ color: red;
+ text-shadow: 3px 3px 3px white;
 }
 .footer-mult img
 {
-    width: 235px;
+    width: 100px;
+    border-radius: 300%;
+
     transform: translate(1200px);
     transition: 90s;
+    
+    
 } 
 
 .icono-1
@@ -658,32 +686,8 @@ border-radius: 100%;
  align-items: center;
   gap: 10px;
 }
-.bi-instagram
-{
-    font-size: 30px;
-    color: rgb(156, 33, 70);
 
-}
-.bi-facebook
-{
-    font-size: 30px;
-    color: blue;
-}
-.bi-twitter
-{
-    font-size: 30px;
-    color: lightskyblue;
-}
-.bi-google
-{
-    font-size:30px;
-    color: white;
-}
-.bi-youtube
-{
-    font-size: 30px;
-    color: red;
-}
+
 
 
 
