@@ -5,10 +5,11 @@
     box-sizing: border-box;
 }
 
-/*---------portada----------*/
+
+/*---------footer----------*/
 .portada {
-    display: grid;
-    grid-template-columns: 80px 1fr;
+
+    display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(gray, black);
@@ -16,113 +17,250 @@
     height: 100px;
 }
 
-h1 {
-    font-size: 30px;
+.portada__titulo {
+    font-size: 20px;
     color: red;
     text-shadow: 5px 1px 1px black;
 
 }
 
 .portada img {
-    width: 70px;
-    height: 80px;
-    padding-left: 10px;
-    align-self: center;
+    width: 40px;
+    height: 50px;
+
+}
+@media (min-width:480px){
+    .portada__titulo {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .portada img {
+        width: 50px;
+        height: 70px;
+    
+    }
+}
+
+/* boton amburguesa*/
+.menu {
+    background-color: red;
+    max-width: 100%;
+    height: 20px;
+}
+
+.listado {
+
+    background-color: red;
+    max-width: 100%;
+    height: 200px;
+    position: relative;
+    display: none;
+    border-radius: 3%;
+}
+
+.menu:hover .listado {
+    display: block;
+
 
 }
 
-
-
-
-/*------nav-------*/
-
-.contenedor {
-
-    background-color: red;
-   max-width: 100%;
-    height: 50px;
+.bi-list {
+    font-size: 15px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    color: white;
+}
+
+.listado a {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.listado a:hover {
+    color: white;
+}
+
+.nav a {
     display: none;
 }
 
 
 
+@media (min-width:480px) {
+    .menu {
+        display: none;
+    }
 
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
+        background-color: red;
+        max-width: 100%;
+        height: 60px;
+    }
 
+    .nav a {
 
-.list-1 {
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    gap: 5px;
+        display: block;
+        display: flex;
+        gap: 5px;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
 
-
-
-
-}
-
-.list-2 {
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    gap: 5px;
-
-}
-
-.list-3 {
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    gap: 5px;
-
-}
-
-.list-4 {
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    gap: 5px;
+    .nav a:hover {
+        color: white;
+    }
 
 
 }
 
-.list-1:hover {
-    color: white;
-}
-
-.list-2:hover {
-    color: white;
-}
-
-.list-3:hover {
-    color: white;
-}
-
-.list-4:hover {
-    color: white;
+.galeria {
+    display: none;
 }
 
 
 
+@media (min-width:480px) {
 
+    .galeria {
+        display: block;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
 
+    .galeria ul {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
 
+        animation: cambio 0.5s infinite alternate;
+        animation-timing-function: linear;
 
+    }
 
+    .imagenes li {
+        width: 100%;
+        list-style: none;
 
+    }
+
+    .imagenes img {
+        border: 2px solid blue;
+        width: 100 %;
+    }
+
+    @keyframes cambio {
+        0% {
+            margin-left: 0;
+        }
+
+        20% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: -100%;
+        }
+
+        100% {
+            margin-left: -100%;
+        }
+
+        100% {
+            margin-left: -100%;
+        }
+
+        100% {
+            margin-left: -100%;
+        }
+
+        100% {
+            margin-left: -100%;
+        }
+
+        100% {
+            margin-left: -100%;
+        }
+    }
+
+}
 
 /*-------seccion-noticias-------*/
+.galerias {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.galeria ul {
+    display: flex;
+    padding: 0px;
+    margin: 10px;
+    max-width: 100%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-out;
+
+}
+
+.imagenes li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.imagenes img {
+    border: 2px solid blue;
+    width: 100 %;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
 
 .noticias-1 {
     margin: 20px;
@@ -130,26 +268,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-
-
-
-
+    gap: 2px;
 }
 
 .noticias-1 h4 {
     background-color: grey;
     width: 125px;
-
-
-
 }
 
-
-
 .noticias-1 img {
-    width: 330px;
-
+    width: 100%;
 }
 
 hr {
@@ -162,8 +290,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-
+    gap: 2px;
 }
 
 .noticias-2 h4 {
@@ -172,7 +299,7 @@ hr {
 }
 
 .noticias-2 img {
-    width: 330px;
+    width: 100%;
 }
 
 hr {
@@ -187,7 +314,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
 
 }
 
@@ -197,12 +324,355 @@ hr {
 }
 
 .noticias-3 img {
-    width: 330px;
+    width: 100%;
 }
 
-hr {
-    margin: 10px;
+@media (min-width:1024px) {
+    .noticias {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
+
+
+
+hr {
+    
+    color: red;
+}
+
+
+/*------------plantel----------------*/
+
+.plantel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.plantel__profesional {
+    font-size: 30px;
+    font-family:'Jost', sans-serif;
+    color:red;
+    margin-left: 10px;
+
+   
+}
+.plantel__demicheli {
+    
+    margin-top: 30px;
+   
+ 
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+       
+}
+
+.plantel__demicheli img {
+    grid-area: foto;
+}
+
+.plantel__demicheli h2 {
+    grid-area: h2;
+}
+
+.plantel__demicheli h3 {
+    grid-area: h3;
+}
+
+.plantel__demicheli h4 {
+    grid-area: h4;
+}
+
+
+
+.plantel__armani {
+   
+    margin-top: 30px;
+   
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__armani img {
+    grid-area: foto;
+}
+
+.plantel__armani h2 {
+    grid-area: h2;
+}
+
+.plantel__armani h3 {
+    grid-area: h3;
+}
+
+.plantel__armani h4 {
+    grid-area: h4;
+}
+
+
+.plantel__casco {
+  
+    margin-top: 30px;
+   
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__casco img {
+    grid-area: foto;
+}
+
+.plantel__casco h2 {
+    grid-area: h2;
+}
+
+.plantel__casco h3 {
+    grid-area: h3;
+}
+
+.plantel__casco h4 {
+    grid-area: h4;
+}
+
+
+.plantel__maidana {
+   
+    margin-top: 30px;
+   
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__maidana img {
+    grid-area: foto;
+}
+
+.plantel__maidana h2 {
+    grid-area: h2;
+}
+
+.plantel__maidana h3 {
+    grid-area: h3;
+}
+
+.plantel__maidana h4 {
+    grid-area: h4;
+}
+
+
+
+
+
+.plantel__zuculini {
+   
+    margin-top: 30px;
+  
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__zuculini img {
+    grid-area: foto;
+}
+
+.plantel__zuculini h2 {
+    grid-area: h2;
+}
+
+.plantel__zuculini h3 {
+    grid-area: h3;
+}
+
+.plantel__zuculini h4 {
+    grid-area: h4;
+}
+
+.plantel__rojas {
+   
+    margin-top: 30px;
+ 
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__rojas img {
+    grid-area: foto;
+}
+
+.plantel__rojas h2 {
+    grid-area: h2;
+}
+
+.plantel__rojas h3 {
+    grid-area: h3;
+}
+
+.plantel__rojas h4 {
+    grid-area: h4;
+}
+
+.plantel__delacruz {
+   
+    margin-top: 30px;
+   
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__delacruz img {
+    grid-area: foto;
+}
+
+.plantel__delacruz h2 {
+    grid-area: h2;
+}
+
+.plantel__delacruz h3 {
+    grid-area: h3;
+}
+
+.plantel__delacruz h4 {
+    grid-area: h4;
+}
+
+
+.plantel__martinez {
+  
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+}
+
+.plantel__martinez img {
+    grid-area: foto;
+}
+
+.plantel__martinez h2 {
+    grid-area: h2;
+}
+
+.plantel__martinez h3 {
+    grid-area: h3;
+}
+
+.plantel__martinez h4 {
+    grid-area: h4;
+}
+
+@media (min-width:1024px) {
+    .plantel {
+        display: grid;
+     
+        grid-template-columns: 50% 50%;
+        grid-template-rows:30px 90px 90px 90px 90px;
+        grid-template-areas: "titulo titulo"
+        "armani demicheli"
+        "casco martinez"
+        "delacruz zuculini"
+        "maidana rojas";
+
+    }
+    .plantel__profesional {
+        grid-area: titulo;
+        
+    }
+    .plantel__demicheli {
+        grid-area: demicheli;
+        justify-self: center;
+        
+    }
+    .plantel__armani {
+        grid-area: armani;
+        justify-self: center;
+    }
+    .plantel__casco {
+        grid-area: casco;
+        justify-self: center;
+    }
+    .plantel__delacruz {
+        grid-area: delacruz;
+        justify-self: center;
+    }
+    .plantel__maidana {
+        grid-area: maidana;
+        justify-self: center;
+    }
+    .plantel__martinez {
+        grid-area: martinez;
+        justify-self: center;
+    }
+    .plantel__zuculini {
+        grid-area: zuculini;
+        justify-self: center;
+    }
+    .plantel__rojas {
+        grid-area: rojas;
+        justify-self: center;
+    }
+    
+}
+
 
 
 /*------- seccion formulario----------*/
@@ -228,73 +698,206 @@ label {
     color: red;
 }
 
+/*---------seccion articulos---------*/
+.articulos {
+
+    font-family: 'Jost', sans-serif;
+    color: red;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+
+
+
+
+.club {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    border: 2px solid rgb(75, 7, 246);
+    width: 150px;
+    height: 260px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.club h2 {
+    font-size: 12px;
+    color: red;
+
+}
+
+.club p {
+    font-size: 12px;
+}
+
+.club img {
+    width: 100%;
+}
+
+
+.pretemporada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    border: 2px solid rgb(61, 22, 158);
+    width: 150px;
+    height: 260px;
+    padding: 5px;
+
+}
+
+.pretemporada h2 {
+    font-size: 12px;
+    color: red;
+
+}
+
+.pretemporada p {
+    font-size: 12px;
+}
+
+.pretemporada img {
+    width: 100%;
+}
+
+
+.fixture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    border: 2px solid rgb(61, 22, 158);
+    width: 150px;
+    height: 260px;
+    padding: 5px;
+
+}
+
+.fixture h2 {
+    font-size: 12px;
+    color: red;
+
+}
+
+.fixture p {
+    font-size: 12px;
+}
+
+.fixture img {
+    width: 100%;
+}
+
+
+.selectivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    border: 2px solid rgb(61, 22, 158);
+    width: 150px;
+    height: 260px;
+    padding: 5px;
+
+}
+
+.selectivo h2 {
+    font-size: 12px;
+    color: red;
+
+}
+
+.selectivo p {
+    font-size: 12px;
+}
+
+.selectivo img {
+    width: 100%;
+}
+
+.observacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+
+
+
+}
+
 /*-----------footer-----------*/
 .entero {
     background: black;
     max-width: 100%;
     height: 200px;
     display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.pie-pagina {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.entero img {
+    width: 200px;
 }
 
-.direcciones {
+
+.contactos a {
     display: flex;
-    flex-direction: row;
+    padding: 5px;
+}
+
+.contactos li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contactos__direcciones {
+
     font-size: 15px;
     list-style: none;
     text-decoration: none;
-    padding: 5px;
-    gap: 5px;
+
     color: white;
 }
 
-.telefonos {
-    display: flex;
-    flex-direction: row;
+.contactos__telefonos {
     font-size: 15px;
     list-style: none;
     text-decoration: none;
-    padding: 5px;
-    gap: 5px;
     color: white;
 }
 
-.whatsapp {
-    display: flex;
-    flex-direction: row;
+.contacto__whatsapp {
     font-size: 15px;
     list-style: none;
     text-decoration: none;
-    padding: 5px;
-    gap: 5px;
     color: white;
 }
 
-.instagram {
-    display: flex;
-    flex-direction: row;
+.contacto__instagram {
     font-size: 15px;
     list-style: none;
     text-decoration: none;
-    padding: 5px;
-    gap: 5px;
     color: white;
 }
 
-.facebook {
-    display: flex;
-    flex-direction: row;
+.contacto__facebook {
     font-size: 15px;
     list-style: none;
     text-decoration: none;
-    padding: 5px;
-    gap: 5px;
     color: white;
 }
 
@@ -332,13 +935,15 @@ label {
     justify-self: center;
 
 }
-.riv{
+
+.riv {
     max-width: 100%;
-   
-    
+
+
 }
-.riv img{
-    transform:rotate(600px);    
+
+.riv img {
+    transform: rotate(600px);
     transition: 10s;
 }
 
@@ -347,7 +952,7 @@ label {
 
     grid-area: escudo;
     align-self: center;
-    
+
 
 }
 
@@ -644,10 +1249,10 @@ label {
 }
 
 .footer-mult h2 {
-    
+
     color: rgb(248, 244, 244);
     font-size: 50px;
-   
+
 
 
 
@@ -756,7 +1361,7 @@ label {
     background-repeat: no-repeat;
     height: 110vh;
     max-width: 100%;
-   
+
 }
 
 .river-id h2 {
@@ -778,14 +1383,14 @@ label {
 
 .ingr {
     display: grid;
-    grid-template-columns: 600px 1fr; 
-    grid-template-rows:90px 90px 90px 90px 90px ;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 90px 90px 90px 90px 90px;
     grid-template-areas: "titulo imagen"
-                          "subtitulo imagen"
-                           "caja imagen"
-                           "caja imagen"
-                          ;
-   
+        "subtitulo imagen"
+        "caja imagen"
+        "caja imagen"
+    ;
+
 }
 
 
@@ -793,189 +1398,39 @@ label {
     font-family: arial;
     color: white;
     padding-left: 20px;
-    
-   
+
+
 }
 
 .password label {
     font-family: arial;
     color: white;
     padding-left: 20px;
-  
+
 
 }
-.usuario input 
-{
+
+.usuario input {
     margin-left: 20px;
 }
-.password input
-{
+
+.password input {
     margin-left: 20px;
 }
+
 .ingresar input {
-  
+
     color: rgb(250, 246, 246);
     background-color: rgb(247, 6, 6);
     grid-area: caja;
     margin-left: 100px;
-    
-   
+
+
 
 }
-.ingr img 
-{
-  
-   grid-area: imagen;
-   align-self: flex-start;
-}
 
+.ingr img {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------modo responsive----------*/
-@media (min-width:375px) {
-   
-    .contenedor {
-        display: block;
-        display: flex;
-    }
-
-    .seccion-noticas {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .noticias {
-        display: flex;
-        flex-direction: row;
-
-
-
-    }
-
-    .formulario {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-
-
-    }
-
-    input {
-        font-size: 30px;
-
-
-    }
-
-    label {
-        font-size: 40px;
-        font-family: 'Fasthand', cursiva;
-        color: red;
-    }
-
-    .entero {
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .pie-pagina li {
-        font-size: 20px;
-
-    }
-
-    .entero img {
-        border-radius: 100%;
-        transform: translate(250px) rotate(360deg);
-        translate: 60px 8px;
-        transition: 15s;
-    }
-
-    .header-futbol {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .header-futbol:hover {
-        background-color: rgb(249, 2, 2);
-        border: 5px solid black;
-        transition: 3s;
-    }
-
-    .header-futbol h2 {
-        font-size: 50px;
-    }
-
-    .header-futbol h2:hover {
-        color: white;
-        transform: translate(300px);
-        transition: 6s;
-
-
-    }
-
-    .central {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 90px;
-        padding: 20px;
-    }
-
-    hr {
-        display: none;
-    }
-
-    .noticias-reserva {
-        display: none;
-    }
-
-    .contenido-noticias {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-
-    }
-
-    .etiquetas h2 {
-        font-size: 30px;
-    }
-
-    .etiquetas a {
-        font-size: 20px;
-        margin: 10px;
-
-    }
-
-    .riv {
-        margin-top: 20px;
-    }
-
-
-
-
-
-
-
-
-
+    grid-area: imagen;
+    align-self: flex-start;
 }
