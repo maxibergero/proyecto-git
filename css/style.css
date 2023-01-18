@@ -29,15 +29,17 @@
     height: 50px;
 
 }
-@media (min-width:480px){
+
+@media (min-width:480px) {
     .portada__titulo {
         font-size: 30px;
         padding: 20px;
     }
+
     .portada img {
         width: 50px;
         height: 70px;
-    
+
     }
 }
 
@@ -52,7 +54,7 @@
 
     background-color: red;
     max-width: 100%;
-    height: 200px;
+    height: 220px;
     position: relative;
     display: none;
     border-radius: 3%;
@@ -338,7 +340,7 @@ hr {
 
 
 hr {
-    
+
     color: red;
 }
 
@@ -350,22 +352,24 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
+
 .plantel__profesional {
     font-size: 30px;
-    font-family:'Jost', sans-serif;
-    color:red;
+    font-family: 'Jost', sans-serif;
+    color: red;
     margin-left: 10px;
 
-   
+
 }
+
 .plantel__demicheli {
-    
+
     margin-top: 30px;
-   
- 
+
+
     display: grid;
     justify-items: center;
     align-items: center;
@@ -374,7 +378,7 @@ hr {
     grid-template-areas: "foto h2"
         "foto h3"
         "foto h4";
-       
+
 }
 
 .plantel__demicheli img {
@@ -396,9 +400,9 @@ hr {
 
 
 .plantel__armani {
-   
+
     margin-top: 30px;
-   
+
 
     display: grid;
     justify-items: center;
@@ -428,9 +432,9 @@ hr {
 
 
 .plantel__casco {
-  
+
     margin-top: 30px;
-   
+
 
     display: grid;
     justify-items: center;
@@ -460,14 +464,14 @@ hr {
 
 
 .plantel__maidana {
-   
+
     margin-top: 30px;
-   
+
 
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns:110px 230px;
+    grid-template-columns: 110px 230px;
     grid-template-rows: 30px 20px 20px;
     grid-template-areas: "foto h2"
         "foto h3"
@@ -495,14 +499,14 @@ hr {
 
 
 .plantel__zuculini {
-   
+
     margin-top: 30px;
-  
+
 
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns:110px 230px;
+    grid-template-columns: 110px 230px;
     grid-template-rows: 30px 20px 20px;
     grid-template-areas: "foto h2"
         "foto h3"
@@ -526,14 +530,14 @@ hr {
 }
 
 .plantel__rojas {
-   
+
     margin-top: 30px;
- 
+
 
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns:110px 230px;
+    grid-template-columns: 110px 230px;
     grid-template-rows: 30px 20px 20px;
     grid-template-areas: "foto h2"
         "foto h3"
@@ -557,14 +561,14 @@ hr {
 }
 
 .plantel__delacruz {
-   
+
     margin-top: 30px;
-   
+
 
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns:110px 230px;
+    grid-template-columns: 110px 230px;
     grid-template-rows: 30px 20px 20px;
     grid-template-areas: "foto h2"
         "foto h3"
@@ -589,15 +593,15 @@ hr {
 
 
 .plantel__martinez {
-  
+
     margin-top: 30px;
     margin-bottom: 30px;
-  
+
 
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns:110px 230px;
+    grid-template-columns: 110px 230px;
     grid-template-rows: 30px 20px 20px;
     grid-template-areas: "foto h2"
         "foto h3"
@@ -623,54 +627,63 @@ hr {
 @media (min-width:1024px) {
     .plantel {
         display: grid;
-     
+
         grid-template-columns: 50% 50%;
-        grid-template-rows:30px 90px 90px 90px 90px;
+        grid-template-rows: 30px 90px 90px 90px 90px;
         grid-template-areas: "titulo titulo"
-        "armani demicheli"
-        "casco martinez"
-        "delacruz zuculini"
-        "maidana rojas";
+            "armani demicheli"
+            "casco martinez"
+            "delacruz zuculini"
+            "maidana rojas";
 
     }
+
     .plantel__profesional {
         grid-area: titulo;
-        
+
     }
+
     .plantel__demicheli {
         grid-area: demicheli;
         justify-self: center;
-        
+
     }
+
     .plantel__armani {
         grid-area: armani;
         justify-self: center;
     }
+
     .plantel__casco {
         grid-area: casco;
         justify-self: center;
     }
+
     .plantel__delacruz {
         grid-area: delacruz;
         justify-self: center;
     }
+
     .plantel__maidana {
         grid-area: maidana;
         justify-self: center;
     }
+
     .plantel__martinez {
         grid-area: martinez;
         justify-self: center;
     }
+
     .plantel__zuculini {
         grid-area: zuculini;
         justify-self: center;
     }
+
     .plantel__rojas {
         grid-area: rojas;
         justify-self: center;
     }
-    
+
 }
 
 
@@ -739,6 +752,17 @@ label {
 .club img {
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .pretemporada {
@@ -837,6 +861,138 @@ label {
 
 }
 
+
+@media (min-width:1024px) {
+    .observacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .club {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 5px;
+        border: 2px solid rgb(75, 7, 246);
+        width: 1000px;
+        height: 520px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .club h2 {
+        font-size: 30px;
+        color: red;
+        padding: 5px;
+
+    }
+
+    .club p {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .club img {
+        width: 600px;
+    }
+
+
+    .pretemporada {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 5px;
+        border: 2px solid rgb(75, 7, 246);
+        width: 1000px;
+        height: 520px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .pretemporada h2 {
+        font-size: 30px;
+        color: red;
+        padding: 5px;
+
+    }
+
+    .pretemporada p {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .pretemporada img {
+        width: 600px;
+    }
+
+    .fixture {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 5px;
+        border: 2px solid rgb(75, 7, 246);
+        width: 1000px;
+        height: 520px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .fixture h2 {
+        font-size: 30px;
+        color: red;
+        padding: 5px;
+
+    }
+
+    .fixture p {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .fixture img {
+        width: 600px;
+    }
+
+    .selectivo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 5px;
+        border: 2px solid rgb(75, 7, 246);
+        width: 1000px;
+        height: 520px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .selectivo h2 {
+        font-size: 30px;
+        color: red;
+        padding: 5px;
+
+    }
+
+    .selectivo p {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .selectivo img {
+        width: 600px;
+    }
+}
+
+
 /*-----------footer-----------*/
 .entero {
     background: black;
@@ -901,24 +1057,27 @@ label {
     color: white;
 }
 
-/*------------header-futbol-----------*/
-.header-futbol {
+
+
+
+
+/*------------seccion futbol.html -----------*/
+.futbol {
     padding: 10px;
-    background-color: red;
+    background-image: url(../imagenes/barra.jpg);
     max-width: 100%;
+    height: 300px;
 }
 
-.header-futbol h2 {
-    font-size: 20px;
+.futbol h1 {
+    font-size: 40px;
+    color: red;
 
 }
 
 /*-------seccion-futbol------------*/
-.partidos {
+.monterrey {
     display: grid;
-
-
-
     grid-template-columns: 90px 90px;
     grid-template-rows: 30px 60px;
     grid-template-areas: "titulo titulo"
@@ -929,35 +1088,47 @@ label {
 
 }
 
-.partidos h4 {
-
+.monterrey h4 {
     grid-area: titulo;
     justify-self: center;
-
 }
 
-.riv {
-    max-width: 100%;
-
-
+.monterrey h5 {
+    grid-area: subtitulo;
+    align-self: flex-start;
+    padding-top: 10px;
 }
 
-.riv img {
-    transform: rotate(600px);
-    transition: 10s;
+.monterrey h6 {
+    grid-area: subtitulo;
+    align-self: center;
+    gap: 2px;
 }
 
-.river img {
+.america {
+    display: grid;
 
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 30px 60px;
+    grid-template-areas: "titulo titulo"
+        "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+    padding: 5px;
+}
 
+.america h4 {
+    grid-area: titulo;
+    justify-self: center;
+}
+
+.america__river img {
     grid-area: escudo;
     align-self: center;
 
-
 }
 
-
-.partidos h5 {
+.america h5 {
     grid-area: subtitulo;
 
     align-self: flex-start;
@@ -967,7 +1138,7 @@ label {
 
 }
 
-.partidos h6 {
+.america h6 {
 
     grid-area: subtitulo;
     align-self: center;
@@ -977,58 +1148,7 @@ label {
 }
 
 
-
-
-.partidos-1 {
-    display: grid;
-
-    grid-template-columns: 90px 90px;
-    grid-template-rows: 30px 60px;
-    grid-template-areas: "titulo titulo"
-        "escudo subtitulo";
-    border: 1px solid black;
-    width: 190px;
-    padding: 5px;
-
-}
-
-.partidos-1 h4 {
-
-    grid-area: titulo;
-    justify-self: center;
-
-}
-
-
-.river-1 img {
-
-
-    grid-area: escudo;
-    align-self: center;
-
-}
-
-.partidos-1 h5 {
-    grid-area: subtitulo;
-
-    align-self: flex-start;
-    padding-top: 10px;
-
-
-
-}
-
-.partidos-1 h6 {
-
-    grid-area: subtitulo;
-    align-self: center;
-    gap: 2px;
-
-
-}
-
-
-.partidos-2 {
+.millonarios {
     display: grid;
     grid-template-columns: 90px 90px;
     grid-template-rows: 30px 60px;
@@ -1040,7 +1160,7 @@ label {
     padding: 5px;
 }
 
-.partidos-2 h4 {
+.millonarios h4 {
 
     grid-area: titulo;
     justify-self: center;
@@ -1048,7 +1168,7 @@ label {
 }
 
 
-.river-2 img {
+.millonarios__river img {
 
 
     grid-area: escudo;
@@ -1056,7 +1176,7 @@ label {
 
 }
 
-.partidos-2 h5 {
+.millonarios h5 {
     grid-area: subtitulo;
 
     align-self: flex-start;
@@ -1066,7 +1186,7 @@ label {
 
 }
 
-.partidos-2 h6 {
+.millonarios h6 {
 
     grid-area: subtitulo;
     align-self: center;
@@ -1078,22 +1198,31 @@ label {
 .central {
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
-    padding: 10px;
+    gap: 30px;
+    padding: 40px;
 }
 
+
+
 /*-----------seccion-reserva-----------*/
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .noticias-reserva {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(41, 40, 40);
     margin-left: 10px;
     padding-top: 10px;
 }
 
 .reserva img {
-    width: 374px;
+    width: 100%;
 
 }
 
@@ -1107,12 +1236,14 @@ label {
     color: red;
 }
 
+
+
 .reserva-1 {
     margin-top: 10px;
 }
 
 .reserva-1 img {
-    width: 374px;
+    width: 100%;
 
 }
 
@@ -1132,7 +1263,7 @@ label {
 }
 
 .reserva-2 img {
-    width: 374px;
+    width: 100%;
 
 }
 
@@ -1146,19 +1277,53 @@ label {
     color: red;
 }
 
+
+/*-----------resultado-------------*/
+.river__gano {
+    display: flex;
+    gap: 5px;
+    color: red;
+}
+
+.river {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.river img:hover {
+    border: 2px solid red;
+
+    border-radius: 40%;
+
+}
+
+@media (min-width:480px) {
+    .vistazos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
 /*----------------etiquetas-------------------*/
 .etiquetas h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
 }
 
 .etiquetas a {
     background-color: grey;
     text-decoration: none;
     color: black;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
 }
 
 /*---------------footer----------------*/
@@ -1184,7 +1349,7 @@ label {
 
 .riv p {
     color: white;
-    padding: 30px;
+    padding: 20px;
     font-size: 10px;
 }
 
@@ -1192,33 +1357,66 @@ label {
 /*----------seccion-multimedia------------*/
 .mult h2 {
     background-color: gray;
-    height: 50px;
+    max-width: 100%;
+    height: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
-    font-size: 40px;
+    margin-top: 30px;
+    font-size: 25px;
 
 
 }
 
 .mult img {
-    margin-top: -80px;
-    margin-left: 90px;
+    width: 60px;
+    margin-top: -90px;
+    margin-left: 10px;
 }
 
 .vid {
     font-size: 30px;
-    padding: 30px;
+    padding: 10px;
     color: grey;
+}
+
+@media (min-width:480px) {
+    .mult h2 {
+        background-color: gray;
+        max-width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        font-size: 40px;
+    
+    
+    }
+    
+    .mult img {
+        width: 100px;
+        margin-top: -90px;
+        margin-left: 10px;
+    }
+    
+    .vid {
+        font-size: 30px;
+        padding: 10px;
+        color: grey;
+    }
+
 }
 
 .principal {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+
 }
 
 .principal iframe {
-    width: 1000px;
+    width: 100%;
+    margin: 10px;
     height: 600px;
 
 
@@ -1241,21 +1439,19 @@ label {
 .footer-mult {
     background-color: black;
     max-width: 100%;
-    height: 20vh;
+    height: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
 
 }
 
 .footer-mult h2 {
-
     color: rgb(248, 244, 244);
-    font-size: 50px;
-
-
-
-
+    font-size: 20px;
+    
 }
 
 .footer-mult h2:hover {
@@ -1267,75 +1463,118 @@ label {
 .footer-mult img {
     width: 100px;
     border-radius: 300%;
-
     transform: translate(1200px);
     transition: 90s;
-
-
+    position: absolute;
 }
+ .footer-mult i {
+ padding: 5px;
+ font-size: 20px;
 
-.icono-1 {
-    background-color: black;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+ }
+ .icono {
+    padding: 40px;
+    
+ }
+
+ @media (min-width:768px){
+    .footer-mult {
+        height: 200px;
+    }
+    .footer-mult h2 {
+        font-size: 50px;
+    }
+ }
+
 
 /*-------------seccion-socio---------------*/
 .socio {
     display: flex;
 }
+.socio img {
+    object-fit: cover;
+    max-width:100%;
+    height: 90px;
+}
 
 .socio h2 {
-    font-size: 60px;
+    font-size: 16px;
     margin-left: 30px;
     color: rgb(250, 252, 252);
 
     position: absolute;
     align-self: flex-end;
-    transform: translate(300px);
+    transform: translate(190px);
     transition: 9s;
 }
-
+@media (min-width:480px){
+    .socio img {
+        width:100%;
+        height: 200px;
+    }
+    .socio h2 {
+        font-size: 40px;
+        margin-left: 30px;
+        color: rgb(250, 252, 252);
+    
+        position: absolute;
+        align-self: flex-end;
+        transform: translate(600px);
+        transition: 9s;
+    }
+}
+@media (min-width:480px) {
+    .socio h2 {
+        font-size: 40px;
+        margin-left: 30px;
+        color: rgb(250, 252, 252);
+    
+        position: absolute;
+        align-self: flex-end;
+        transform: translate(800px);
+        transition: 9s;
+    }
+}
 .carnet {
     display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 
 .carnet p {
     font-size: 20px;
-    padding-top: 40px;
-    padding-left: 40px;
-    width: 800px;
+    margin-top: 30px;
+    padding: 10px;
+    
 }
 
-.img-carnet {
+.carnet__img {
     padding-top: 60px;
     display: flex;
     justify-content: center;
 }
 
-.listas-carnet {
+.carnet__listas {
     padding-top: 20px;
 
     display: flex;
     flex-direction: column;
 }
 
-.listas-carnet h3 {
-    font-size: 30px;
+.carnet__listas h3 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
 }
 
-.listas-carnet li {
+.carnet__listas li {
     font-size: 20px;
     padding: 20px;
 }
 
-.listas-carnet iframe {
-    width: 300px;
-    height: 300px;
+.carnet__listas iframe {
+    width: 150px;
+    height: 150px;
     padding-left: 20px;
     padding-bottom: 20px;
 
@@ -1343,94 +1582,134 @@ label {
 
 }
 
-.footer-carnet {
+.pie {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
+    
     background-color: black;
     width: 100vw;
-    height: 30vh;
+    height: 150px;
 }
+.pie h2 {
+    font-size: 25px;
+    color: white;
+    
 
-.footer-carnet img {
-    object-fit: cover;
 }
+.pie__sponsor img {
+    
+    object-fit: cover;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    
+}
+@media (min-width:768px) {
+    .pie h2 {
+        font-size: 40px;
+        color: white;
+        
+    
+    }
+}
+    
+
 
 /*-----------seccion-riverid--------*/
-.cancha {
-    background: linear-gradient(60deg, black 60%, grey);
-    background-repeat: no-repeat;
-    height: 110vh;
-    max-width: 100%;
 
+
+.cancha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, black 60%, grey);
+    max-width: 100%;
+    height: 80vh;
 }
 
 .river-id h2 {
-    font-size: 100px;
+    font-size: 50px;
     color: rgb(248, 245, 245);
-    padding-left: 20px;
-    grid-area: titulo;
 }
 
 .river-id h3 {
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-    padding-left: 20px;
-    grid-area: subtitulo;
+    padding-top: 20px;
+    margin: 10px;
 }
 
-
-
-
-.ingr {
-    display: grid;
-    grid-template-columns: 600px 1fr;
-    grid-template-rows: 90px 90px 90px 90px 90px;
-    grid-template-areas: "titulo imagen"
-        "subtitulo imagen"
-        "caja imagen"
-        "caja imagen"
-    ;
-
-}
-
-
-.usuario label {
+.ingr__usuario label {
     font-family: arial;
     color: white;
-    padding-left: 20px;
-
-
+    margin: 10px;
 }
 
-.password label {
+.ingr__password label {
     font-family: arial;
     color: white;
-    padding-left: 20px;
-
-
+   margin: 10px;
+}
+.ingr input {
+    margin: 10px;
 }
 
-.usuario input {
-    margin-left: 20px;
-}
-
-.password input {
-    margin-left: 20px;
-}
-
-.ingresar input {
-
-    color: rgb(250, 246, 246);
-    background-color: rgb(247, 6, 6);
-    grid-area: caja;
-    margin-left: 100px;
-
-
-
-}
 
 .ingr img {
-
-    grid-area: imagen;
-    align-self: flex-start;
+    width: 300px;
+    padding-top: 20px;
+}
+@media (min-width:768px){
+    .cancha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(60deg, black 60%, grey);
+        max-width: 100%;
+        height: 100vh;
+    }
+    
+    .river-id h2 {
+        font-size: 60px;
+        color: rgb(248, 245, 245);
+    }
+    
+    .river-id h3 {
+        font-size: 30px;
+        color: white;
+        padding-top: 20px;
+        margin: 10px;
+    }
+    
+    .ingr__usuario label {
+        font-family: arial;
+        color: white;
+        margin: 10px;
+    }
+    .cancha img {
+        width: 400px;
+        padding: 20px;
+    }
+   
+}
+@media (min-width:1024px) {
+    .cancha img {
+        width: 600px;
+        padding: 20px;
+    }
+    .cancha {
+        height: 130vh;
+    }
+    .river-id h2 {
+        font-size: 70px;
+      
+    }
+    
+    .river-id h3 {
+        font-size: 40px;
+      
 }
