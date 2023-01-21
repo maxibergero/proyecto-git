@@ -1,0 +1,337 @@
+/*------------plantel----------------*/
+
+.plantel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__profesional {
+        font-size: 30px;
+        font-family: 'Jost', sans-serif;
+        color: $color-primario;
+        margin-left: 10px;
+    }   
+    &__demicheli {
+        margin-top: 30px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 110px 230px;
+        grid-template-rows: 30px 20px 20px;
+        grid-template-areas: "foto h2"
+            "foto h3"
+            "foto h4";
+
+            & img {
+                grid-area: foto;
+            }
+            
+            & h2 {
+                grid-area: h2;
+            }
+            
+            & h3 {
+                grid-area: h3;
+            }
+            
+            & h4 {
+                grid-area: h4;
+            }
+    }
+}
+
+.plantel__armani {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        & img {
+            grid-area: foto;
+        }
+        
+        & h2 {
+            grid-area: h2;
+        }
+        
+        & h3 {
+            grid-area: h3;
+        }
+        
+        & h4 {
+            grid-area: h4;
+        }
+}
+
+.plantel__casco {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        & img {
+            grid-area: foto;
+        }
+        
+        & h2 {
+            grid-area: h2;
+        }
+        
+        & h3 {
+            grid-area: h3;
+        }
+        
+        & h4 {
+            grid-area: h4;
+        }
+}
+.plantel__maidana {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        & img {
+            grid-area: foto;
+        }
+        
+        & h2 {
+            grid-area: h2;
+        }
+        
+        & h3 {
+            grid-area: h3;
+        }
+        
+        & h4 {
+            grid-area: h4;
+        }
+}
+
+.plantel__zuculini {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        & img {
+            grid-area: foto;
+        }
+        
+        & h2 {
+            grid-area: h2;
+        }
+        
+        & h3 {
+            grid-area: h3;
+        }
+        
+        & h4 {
+            grid-area: h4;
+        }
+}
+
+.plantel__rojas {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        & img {
+            grid-area: foto;
+        }
+        
+        & h2 {
+            grid-area: h2;
+        }
+        
+        & h3 {
+            grid-area: h3;
+        }
+        
+        & h4 {
+            grid-area: h4;
+        }
+}
+
+.plantel__delacruz {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        & img {
+            grid-area: foto;
+        }
+        
+        & h2 {
+            grid-area: h2;
+        }
+        
+        & h3 {
+            grid-area: h3;
+        }
+        
+        & h4 {
+            grid-area: h4;
+        }
+}
+
+.plantel__martinez {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 110px 230px;
+    grid-template-rows: 30px 20px 20px;
+    grid-template-areas: "foto h2"
+        "foto h3"
+        "foto h4";
+
+        
+& img {
+    grid-area: foto;
+}
+
+& h2 {
+    grid-area: h2;
+}
+
+& h3 {
+    grid-area: h3;
+}
+
+& h4 {
+    grid-area: h4;
+}
+}
+
+/*-------seccion-futbol------------*/
+.monterrey {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 40px 70px;
+    grid-template-areas: "titulo titulo"
+        "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+    padding: 5px;
+
+    & h4 {
+        grid-area: titulo;
+        justify-self: center;
+        
+    }
+    
+    & h5 {
+        grid-area: subtitulo;
+        align-self: flex-start;
+        padding-top: 10px;
+    }
+    
+    & h6 {
+        grid-area: subtitulo;
+        align-self: center;
+        gap: 2px;
+    }
+
+}
+
+.america {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 40px 70px;
+    grid-template-areas: "titulo titulo"
+        "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+    padding: 5px;
+
+    & h4 {
+        grid-area: titulo;
+        justify-self: center;
+    }
+    
+    &__river img {
+        grid-area: escudo;
+        align-self: center;
+    }
+    
+    & h5 {
+        grid-area: subtitulo;
+        align-self: flex-start;
+        padding-top: 10px;
+    }
+    
+    & h6 {
+        grid-area: subtitulo;
+        align-self: center;
+        gap: 2px;
+    }
+}
+
+.millonarios {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 40px 70px;
+    grid-template-areas: "titulo titulo"
+        "escudo subtitulo";
+    border: 1px solid black;
+    width: 190px;
+    padding: 5px;
+
+    & h4 {
+        grid-area: titulo;
+        justify-self: center;
+    }
+    
+    &__river img {
+        grid-area: escudo;
+        align-self: center;
+    
+    }
+    
+    & h5 {
+        grid-area: subtitulo;
+        align-self: flex-start;
+        padding-top: 10px;
+    }
+    
+    & h6 {
+        grid-area: subtitulo;
+        align-self: center;
+        gap: 2px;
+    }
+}

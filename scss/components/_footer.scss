@@ -1,0 +1,129 @@
+
+/*---------header----------*/
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(gray, black);
+    max-width: 100%;
+    height: 100px;
+
+    & img{
+        width: 30px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    & h1 {
+        font-size: 20px;
+        color:$color-primario;
+        padding: 10px;
+    }
+}
+
+/*-----------footer-----------*/
+.entero {
+    background: black;
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img {
+        width: 200px;
+    }
+}
+.contactos {
+    & a {
+        display: flex;
+        padding: 5px;
+    }
+    
+    & li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &__direcciones {
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+        
+    }
+    &__telefonos {
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+        
+    }
+    &__whatsapp {
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+      
+    }
+    &__instagram {
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+       
+    }
+    &__facebook {
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+        
+    }
+}
+
+/*---------------footer----------------*/
+
+.riv {
+    background-color: rgb(5, 1, 1);
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    & img {
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+        border-radius: 100%;
+    }
+    
+    & p {
+        color: white;
+        padding: 20px;
+        font-size: 10px;
+    }
+}
+
+
+.footer-mult {
+    background-color: black;
+    max-width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    & h2 {
+        color: rgb(248, 244, 244);
+        font-size: 20px;
+        
+    }
+    
+    & h2:hover {
+        transition: 2s;
+        color: red;
+        text-shadow: 3px 3px 3px white;
+    }
+
+     & i {
+     padding: 5px;
+     font-size: 20px;
+     }
+}

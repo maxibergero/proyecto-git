@@ -5,34 +5,56 @@
   box-sizing: border-box;
 }
 
-/*---------footer----------*/
-.portada {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(gray, black);
-  max-width: 100%;
-  height: 100px;
-}
-.portada img {
-  width: 30px;
-  height: 40px;
-  margin-left: 10px;
-}
-.portada h1 {
-  font-size: 20px;
-  color: red;
-  padding: 10px;
-}
-
-@media (min-width: 480px) {
-  .portada h1 {
-    font-size: 40px;
-    padding: 20px;
+@keyframes cambio {
+  0% {
+    margin-left: 0;
   }
-  .portada img {
-    width: 50px;
-    height: 70px;
+  20% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
   }
 }
 /* boton amburguesa*/
@@ -80,202 +102,116 @@
   display: none;
 }
 
-@media (min-width: 480px) {
-  .menu {
-    display: none;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: red;
-    max-width: 100%;
-    height: 60px;
-  }
-  .nav a {
-    display: block;
-    display: flex;
-    gap: 5px;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-  }
-  .nav a:hover {
-    color: white;
-  }
-}
-.galeria {
-  display: none;
-}
-
-@media (min-width: 480px) {
-  .galeria {
-    display: block;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-  }
-  .galeria ul {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    max-width: 100%;
-    animation: cambio 20s infinite alternate;
-    animation-timing-function: linear;
-  }
-  .galeria img {
-    padding: 5px;
-  }
-  .imagenes li {
-    width: 100%;
-    list-style: none;
-  }
-  .imagenes img {
-    border: 2px solid blue;
-    width: 100%;
-  }
-  @keyframes cambio {
-    0% {
-      margin-left: 0;
-    }
-    20% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -100%;
-    }
-    100% {
-      margin-left: -100%;
-    }
-    100% {
-      margin-left: -100%;
-    }
-    100% {
-      margin-left: -100%;
-    }
-    100% {
-      margin-left: -100%;
-    }
-    100% {
-      margin-left: -100%;
-    }
-  }
-}
-/*-------seccion-noticias-------*/
-.galerias {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-}
-.galerias ul {
+/*---------header----------*/
+.portada {
   display: flex;
-  padding: 0px;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(gray, black);
   max-width: 100%;
-  animation: cambio 20s infinite alternate;
-  animation-timing-function: ease-out;
+  height: 100px;
 }
-
-.imagenes li {
-  width: 100%;
-  list-style: none;
+.portada img {
+  width: 30px;
+  height: 40px;
+  margin-left: 10px;
 }
-.imagenes img {
-  border: 2px solid blue;
-  width: 100%;
-}
-
-@keyframes cambio {
-  0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
-}
-.noticias-1 {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-}
-.noticias-1 h4 {
-  background-color: grey;
-  width: 125px;
-}
-.noticias-1 img {
-  width: 100%;
-}
-
-hr {
-  margin: 10px;
-}
-
-.noticias-2 {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-}
-.noticias-2 h4 {
-  background-color: grey;
-  width: 125px;
-}
-.noticias-2 img {
-  width: 100%;
-}
-
-hr {
-  margin: 10px;
-}
-
-.noticias-3 {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-}
-.noticias-3 h4 {
-  background-color: grey;
-  width: 125px;
-}
-.noticias-3 img {
-  width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .noticias {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-hr {
+.portada h1 {
+  font-size: 20px;
   color: red;
+  padding: 10px;
+}
+
+/*-----------footer-----------*/
+.entero {
+  background: black;
+  max-width: 100%;
+  height: 200px;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entero img {
+  width: 200px;
+}
+
+.contactos a {
+  display: flex;
+  padding: 5px;
+}
+.contactos li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contactos__direcciones {
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+.contactos__telefonos {
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+.contactos__whatsapp {
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+.contactos__instagram {
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+.contactos__facebook {
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*---------------footer----------------*/
+.riv {
+  background-color: rgb(5, 1, 1);
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.riv img {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  border-radius: 100%;
+}
+.riv p {
+  color: white;
+  padding: 20px;
+  font-size: 10px;
+}
+
+.footer-mult {
+  background-color: black;
+  max-width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-mult h2 {
+  color: rgb(248, 244, 244);
+  font-size: 20px;
+}
+.footer-mult h2:hover {
+  transition: 2s;
+  color: red;
+  text-shadow: 3px 3px 3px white;
+}
+.footer-mult i {
+  padding: 5px;
+  font-size: 20px;
 }
 
 /*------------plantel----------------*/
@@ -468,49 +404,184 @@ hr {
   grid-area: h4;
 }
 
-@media (min-width: 1024px) {
-  .plantel {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 30px 90px 90px 90px 90px;
-    grid-template-areas: "titulo titulo" "armani demicheli" "casco martinez" "delacruz zuculini" "maidana rojas";
-  }
-  .plantel__profesional {
-    grid-area: titulo;
-  }
-  .plantel__demicheli {
-    grid-area: demicheli;
-    justify-self: center;
-  }
-  .plantel__armani {
-    grid-area: armani;
-    justify-self: center;
-  }
-  .plantel__casco {
-    grid-area: casco;
-    justify-self: center;
-  }
-  .plantel__delacruz {
-    grid-area: delacruz;
-    justify-self: center;
-  }
-  .plantel__maidana {
-    grid-area: maidana;
-    justify-self: center;
-  }
-  .plantel__martinez {
-    grid-area: martinez;
-    justify-self: center;
-  }
-  .plantel__zuculini {
-    grid-area: zuculini;
-    justify-self: center;
-  }
-  .plantel__rojas {
-    grid-area: rojas;
-    justify-self: center;
-  }
+/*-------seccion-futbol------------*/
+.monterrey {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-template-rows: 40px 70px;
+  grid-template-areas: "titulo titulo" "escudo subtitulo";
+  border: 1px solid black;
+  width: 190px;
+  padding: 5px;
 }
+.monterrey h4 {
+  grid-area: titulo;
+  justify-self: center;
+}
+.monterrey h5 {
+  grid-area: subtitulo;
+  align-self: flex-start;
+  padding-top: 10px;
+}
+.monterrey h6 {
+  grid-area: subtitulo;
+  align-self: center;
+  gap: 2px;
+}
+
+.america {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-template-rows: 40px 70px;
+  grid-template-areas: "titulo titulo" "escudo subtitulo";
+  border: 1px solid black;
+  width: 190px;
+  padding: 5px;
+}
+.america h4 {
+  grid-area: titulo;
+  justify-self: center;
+}
+.america__river img {
+  grid-area: escudo;
+  align-self: center;
+}
+.america h5 {
+  grid-area: subtitulo;
+  align-self: flex-start;
+  padding-top: 10px;
+}
+.america h6 {
+  grid-area: subtitulo;
+  align-self: center;
+  gap: 2px;
+}
+
+.millonarios {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-template-rows: 40px 70px;
+  grid-template-areas: "titulo titulo" "escudo subtitulo";
+  border: 1px solid black;
+  width: 190px;
+  padding: 5px;
+}
+.millonarios h4 {
+  grid-area: titulo;
+  justify-self: center;
+}
+.millonarios__river img {
+  grid-area: escudo;
+  align-self: center;
+}
+.millonarios h5 {
+  grid-area: subtitulo;
+  align-self: flex-start;
+  padding-top: 10px;
+}
+.millonarios h6 {
+  grid-area: subtitulo;
+  align-self: center;
+  gap: 2px;
+}
+
+.galeria {
+  display: none;
+}
+
+.imagenes li {
+  width: 100%;
+  list-style: none;
+}
+.imagenes img {
+  border: 2px solid blue;
+  width: 100%;
+}
+
+/*-------seccion-noticias-------*/
+.galerias {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+.galerias ul {
+  display: flex;
+  padding: 0px;
+  margin: 10px;
+  max-width: 100%;
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: ease-out;
+}
+
+.imagenes li {
+  width: 100%;
+  list-style: none;
+}
+.imagenes img {
+  border: 2px solid blue;
+  width: 100%;
+}
+
+.noticias-1 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.noticias-1 h4 {
+  background-color: gray;
+  width: 125px;
+}
+.noticias-1 img {
+  width: 100%;
+}
+
+hr {
+  margin: 10px;
+}
+
+.noticias-2 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.noticias-2 h4 {
+  background-color: gray;
+  width: 125px;
+}
+.noticias-2 img {
+  width: 100%;
+}
+
+hr {
+  margin: 10px;
+}
+
+.noticias-3 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.noticias-3 h4 {
+  background-color: gray;
+  width: 125px;
+}
+.noticias-3 img {
+  width: 100%;
+}
+
+hr {
+  color: red;
+}
+
 /*------- seccion formulario----------*/
 .formulario {
   display: flex;
@@ -633,161 +704,79 @@ label {
   gap: 5px;
 }
 
-@media (min-width: 1024px) {
-  .observacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .club {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid rgb(75, 7, 246);
-    width: 1000px;
-    height: 520px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .club h2 {
-    font-size: 30px;
-    color: red;
-    padding: 5px;
-  }
-  .club p {
-    font-size: 20px;
-    padding: 5px;
-  }
-  .club img {
-    width: 600px;
-  }
-  .pretemporada {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid rgb(75, 7, 246);
-    width: 1000px;
-    height: 520px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .pretemporada h2 {
-    font-size: 30px;
-    color: red;
-    padding: 5px;
-  }
-  .pretemporada p {
-    font-size: 20px;
-    padding: 5px;
-  }
-  .pretemporada img {
-    width: 600px;
-  }
-  .fixture {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid rgb(75, 7, 246);
-    width: 1000px;
-    height: 520px;
-    padding: 5px;
-    margin: 5px;
-  }
-  .fixture h2 {
-    font-size: 30px;
-    color: red;
-    padding: 5px;
-  }
-  .fixture p {
-    font-size: 20px;
-    padding: 5px;
-  }
-  .fixture img {
-    width: 600px;
-  }
-  .selectivo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid rgb(75, 7, 246);
-    width: 1000px;
-    height: 520px;
-    padding: 10px;
-    margin: 5px;
-  }
-  .selectivo h2 {
-    font-size: 30px;
-    color: red;
-    padding: 5px;
-  }
-  .selectivo p {
-    font-size: 20px;
-    padding: 5px;
-  }
-  .selectivo img {
-    width: 600px;
-  }
-}
-/*-----------footer-----------*/
-.entero {
-  background: black;
-  max-width: 100%;
-  height: 200px;
+.pretemporada {
   display: flex;
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(75, 7, 246);
+  width: 1000px;
+  height: 520px;
+  padding: 5px;
+  margin: 5px;
 }
-.entero img {
-  width: 200px;
-}
-
-.contactos a {
-  display: flex;
+.pretemporada h2 {
+  font-size: 30px;
+  color: red;
   padding: 5px;
 }
-.contactos li {
-  padding-left: 10px;
-  padding-right: 10px;
+.pretemporada p {
+  font-size: 20px;
+  padding: 5px;
 }
-.contactos__direcciones {
-  font-size: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
+.pretemporada img {
+  width: 600px;
 }
-.contactos__telefonos {
-  font-size: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
+
+.fixture {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(75, 7, 246);
+  width: 1000px;
+  height: 520px;
+  padding: 5px;
+  margin: 5px;
 }
-.contactos__whatsapp {
-  font-size: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
+.fixture h2 {
+  font-size: 30px;
+  color: red;
+  padding: 5px;
 }
-.contactos__instagram {
-  font-size: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
+.fixture p {
+  font-size: 20px;
+  padding: 5px;
 }
-.contactos__facebook {
-  font-size: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
+.fixture img {
+  width: 600px;
+}
+
+.selectivo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(75, 7, 246);
+  width: 1000px;
+  height: 520px;
+  padding: 10px;
+  margin: 5px;
+}
+.selectivo h2 {
+  font-size: 30px;
+  color: red;
+  padding: 5px;
+}
+.selectivo p {
+  font-size: 20px;
+  padding: 5px;
+}
+.selectivo img {
+  width: 600px;
 }
 
 /*------------seccion futbol.html -----------*/
@@ -805,92 +794,6 @@ label {
 }
 .futbol img {
   max-width: 100%;
-}
-
-@media (min-width: 480px) {
-  .futbol h1 {
-    font-size: 30px;
-  }
-}
-/*-------seccion-futbol------------*/
-.monterrey {
-  display: grid;
-  grid-template-columns: 90px 90px;
-  grid-template-rows: 40px 70px;
-  grid-template-areas: "titulo titulo" "escudo subtitulo";
-  border: 1px solid black;
-  width: 190px;
-  padding: 5px;
-}
-.monterrey h4 {
-  grid-area: titulo;
-  justify-self: center;
-}
-.monterrey h5 {
-  grid-area: subtitulo;
-  align-self: flex-start;
-  padding-top: 10px;
-}
-.monterrey h6 {
-  grid-area: subtitulo;
-  align-self: center;
-  gap: 2px;
-}
-
-.america {
-  display: grid;
-  grid-template-columns: 90px 90px;
-  grid-template-rows: 40px 70px;
-  grid-template-areas: "titulo titulo" "escudo subtitulo";
-  border: 1px solid black;
-  width: 190px;
-  padding: 5px;
-}
-.america h4 {
-  grid-area: titulo;
-  justify-self: center;
-}
-.america__river img {
-  grid-area: escudo;
-  align-self: center;
-}
-.america h5 {
-  grid-area: subtitulo;
-  align-self: flex-start;
-  padding-top: 10px;
-}
-.america h6 {
-  grid-area: subtitulo;
-  align-self: center;
-  gap: 2px;
-}
-
-.millonarios {
-  display: grid;
-  grid-template-columns: 90px 90px;
-  grid-template-rows: 40px 70px;
-  grid-template-areas: "titulo titulo" "escudo subtitulo";
-  border: 1px solid black;
-  width: 190px;
-  padding: 5px;
-}
-.millonarios h4 {
-  grid-area: titulo;
-  justify-self: center;
-}
-.millonarios__river img {
-  grid-area: escudo;
-  align-self: center;
-}
-.millonarios h5 {
-  grid-area: subtitulo;
-  align-self: flex-start;
-  padding-top: 10px;
-}
-.millonarios h6 {
-  grid-area: subtitulo;
-  align-self: center;
-  gap: 2px;
 }
 
 .central {
@@ -920,7 +823,7 @@ label {
   width: 100%;
 }
 .reserva h4 {
-  background-color: grey;
+  background-color: gray;
   width: 120px;
 }
 .reserva h2 {
@@ -934,7 +837,7 @@ label {
   width: 100%;
 }
 .reserva-1 h4 {
-  background-color: grey;
+  background-color: gray;
   width: 120px;
 }
 .reserva-1 h2 {
@@ -948,7 +851,7 @@ label {
   width: 100%;
 }
 .reserva-2 h4 {
-  background-color: grey;
+  background-color: gray;
   width: 120px;
 }
 .reserva-2 h2 {
@@ -974,14 +877,6 @@ label {
   border-radius: 40%;
 }
 
-@media (min-width: 480px) {
-  .vistazos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
 /*----------------etiquetas-------------------*/
 .etiquetas h2 {
   font-size: 30px;
@@ -989,30 +884,9 @@ label {
   padding: 10px;
 }
 .etiquetas a {
-  background-color: grey;
+  background-color: gray;
   text-decoration: none;
   color: black;
-}
-
-/*---------------footer----------------*/
-.riv {
-  background-color: rgb(5, 1, 1);
-  width: 100vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.riv img {
-  width: 80px;
-  height: 80px;
-  margin-top: 20px;
-  border-radius: 100%;
-}
-.riv p {
-  color: white;
-  padding: 20px;
-  font-size: 10px;
 }
 
 /*----------seccion-multimedia------------*/
@@ -1034,30 +908,9 @@ label {
 .vid {
   font-size: 30px;
   padding: 10px;
-  color: grey;
+  color: gray;
 }
 
-@media (min-width: 480px) {
-  .mult h2 {
-    background-color: gray;
-    max-width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    font-size: 40px;
-  }
-  .mult img {
-    width: 100px;
-    margin-top: -90px;
-    margin-left: 10px;
-  }
-  .vid {
-    font-size: 30px;
-    padding: 10px;
-    color: grey;
-  }
-}
 .principal {
   display: flex;
   flex-wrap: wrap;
@@ -1081,41 +934,10 @@ label {
   border: 3px solid red;
 }
 
-.footer-mult {
-  background-color: black;
-  max-width: 100%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer-mult h2 {
-  color: rgb(248, 244, 244);
-  font-size: 20px;
-}
-.footer-mult h2:hover {
-  transition: 2s;
-  color: red;
-  text-shadow: 3px 3px 3px white;
-}
-.footer-mult i {
-  padding: 5px;
-  font-size: 20px;
-}
-
 .icono {
   padding: 40px;
 }
 
-@media (min-width: 768px) {
-  .footer-mult {
-    height: 200px;
-  }
-  .footer-mult h2 {
-    font-size: 50px;
-  }
-}
 /*-------------seccion-socio---------------*/
 .socio {
   display: flex;
@@ -1135,48 +957,6 @@ label {
   transition: 8s;
 }
 
-@media (min-width: 480px) {
-  .socio img {
-    width: 100%;
-    height: 200px;
-  }
-  .socio h2 {
-    font-size: 40px;
-    margin-left: 30px;
-    color: rgb(250, 252, 252);
-    position: absolute;
-    transform: translate(200px);
-    transition: 8s;
-  }
-}
-@media (min-width: 768px) {
-  .socio img {
-    width: 100%;
-    height: 200px;
-  }
-  .socio h2 {
-    font-size: 40px;
-    margin-left: 30px;
-    color: rgb(250, 252, 252);
-    position: absolute;
-    transform: translate(470px);
-    transition: 8s;
-  }
-}
-@media (min-width: 1024px) {
-  .socio img {
-    width: 100%;
-    height: 200px;
-  }
-  .socio h2 {
-    font-size: 40px;
-    margin-left: 30px;
-    color: rgb(250, 252, 252);
-    position: absolute;
-    transform: translate(600px);
-    transition: 8s;
-  }
-}
 .carnet {
   display: flex;
   justify-content: space-around;
@@ -1233,12 +1013,6 @@ label {
   height: 60px;
 }
 
-@media (min-width: 768px) {
-  .pie h2 {
-    font-size: 40px;
-    color: white;
-  }
-}
 /*-----------seccion-riverid--------*/
 .river-plate {
   max-width: 100%;
@@ -1285,6 +1059,234 @@ label {
   padding-top: 20px;
 }
 
+@media (min-width: 480px) {
+  .portada h1 {
+    font-size: 40px;
+    padding: 20px;
+  }
+  .portada img {
+    width: 50px;
+    height: 70px;
+  }
+}
+@media (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    max-width: 100%;
+    height: 60px;
+  }
+  .nav a {
+    display: block;
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  .nav a:hover {
+    color: white;
+  }
+}
+@media (min-width: 480px) {
+  .galeria {
+    display: block;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .galeria ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: linear;
+  }
+  .galeria img {
+    padding: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .noticias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .plantel {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30px 90px 90px 90px 90px;
+    grid-template-areas: "titulo titulo" "armani demicheli" "casco martinez" "delacruz zuculini" "maidana rojas";
+  }
+  .plantel__profesional {
+    grid-area: titulo;
+  }
+  .plantel__demicheli {
+    grid-area: demicheli;
+    justify-self: center;
+  }
+  .plantel__armani {
+    grid-area: armani;
+    justify-self: center;
+  }
+  .plantel__casco {
+    grid-area: casco;
+    justify-self: center;
+  }
+  .plantel__delacruz {
+    grid-area: delacruz;
+    justify-self: center;
+  }
+  .plantel__maidana {
+    grid-area: maidana;
+    justify-self: center;
+  }
+  .plantel__martinez {
+    grid-area: martinez;
+    justify-self: center;
+  }
+  .plantel__zuculini {
+    grid-area: zuculini;
+    justify-self: center;
+  }
+  .plantel__rojas {
+    grid-area: rojas;
+    justify-self: center;
+  }
+}
+@media (min-width: 1024px) {
+  .observacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .club {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid rgb(75, 7, 246);
+    width: 1000px;
+    height: 520px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .club h2 {
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+  }
+  .club p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .club img {
+    width: 600px;
+  }
+}
+@media (min-width: 480px) {
+  .futbol h1 {
+    font-size: 30px;
+  }
+  .futbol img {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .vistazos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 480px) {
+  .mult h2 {
+    background-color: gray;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 40px;
+  }
+  .mult img {
+    width: 100px;
+    margin-top: -90px;
+    margin-left: 10px;
+  }
+  .vid {
+    font-size: 30px;
+    padding: 10px;
+    color: gray;
+  }
+}
+@media (min-width: 768px) {
+  .footer-mult {
+    height: 200px;
+  }
+  .footer-mult h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 480px) {
+  .socio img {
+    width: 100%;
+    height: 200px;
+  }
+  .socio h2 {
+    font-size: 20px;
+    margin-left: 30px;
+    color: rgb(250, 252, 252);
+    position: absolute;
+    transform: translate(300px);
+    transition: 8s;
+  }
+}
+@media (min-width: 768px) {
+  .socio img {
+    width: 100%;
+    height: 200px;
+  }
+  .socio h2 {
+    font-size: 40px;
+    margin-left: 30px;
+    color: rgb(250, 252, 252);
+    position: absolute;
+    transform: translate(470px);
+    transition: 8s;
+  }
+}
+@media (min-width: 1024px) {
+  .socio img {
+    width: 100%;
+    height: 200px;
+  }
+  .socio h2 {
+    font-size: 40px;
+    margin-left: 30px;
+    color: rgb(250, 252, 252);
+    position: absolute;
+    transform: translate(700px);
+    transition: 8s;
+  }
+}
+@media (min-width: 768px) {
+  .pie h2 {
+    font-size: 40px;
+    color: white;
+  }
+}
 @media (min-width: 768px) {
   .cancha {
     display: flex;

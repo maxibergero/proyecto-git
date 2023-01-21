@@ -1,0 +1,344 @@
+@media (min-width:480px) {
+    .portada {
+     & h1 {
+         font-size: 40px;
+         padding: 20px;
+     }
+ 
+     & img {
+         width: 50px;
+         height: 70px;
+     }
+    }
+ }
+
+ 
+ @media (min-width:480px) {
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $color-primario;
+        max-width: 100%;
+        height: 60px;
+
+        & a {
+            display: block;
+            display: flex;
+            gap: 5px;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: $color-botoneshover;
+            }
+        }
+    }
+}
+
+@media (min-width:480px) {
+
+    .galeria {
+        display: block;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+
+        & ul {
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            max-width: 100%;
+            animation: cambio 20s infinite alternate;
+            animation-timing-function: linear;
+        }
+
+        & img {
+            padding: 5px;
+        }
+    }
+}
+
+    @media (min-width:1024px) {
+        .noticias {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    
+@media (min-width:1024px) {
+    .plantel {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30px 90px 90px 90px 90px;
+        grid-template-areas: "titulo titulo"
+            "armani demicheli"
+            "casco martinez"
+            "delacruz zuculini"
+            "maidana rojas";
+
+            
+    &__profesional {
+        grid-area: titulo;
+
+    }
+
+    &__demicheli {
+        grid-area: demicheli;
+        justify-self: center;
+
+    }
+
+    &__armani {
+        grid-area: armani;
+        justify-self: center;
+    }
+
+    &__casco {
+        grid-area: casco;
+        justify-self: center;
+    }
+
+    &__delacruz {
+        grid-area: delacruz;
+        justify-self: center;
+    }
+
+    &__maidana {
+        grid-area: maidana;
+        justify-self: center;
+    }
+
+    &__martinez {
+        grid-area: martinez;
+        justify-self: center;
+    }
+
+    &__zuculini {
+        grid-area: zuculini;
+        justify-self: center;
+    }
+
+    &__rojas {
+        grid-area: rojas;
+        justify-self: center;
+    }
+    }
+}
+
+@media (min-width:1024px) {
+    .observacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .club {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        border: 2px solid rgb(75, 7, 246);
+        width: 1000px;
+        height: 520px;
+        padding: 5px;
+        margin: 5px;
+
+        & h2 {
+            font-size: 30px;
+            color: $color-primario;
+            padding: 5px;
+    
+        }
+        & p {
+            font-size: 20px;
+            padding: 5px;
+        }
+        & img {
+            width: 600px;
+        }
+    }
+}
+
+    @media (min-width:480px) {
+        .futbol {
+            & h1 {
+                font-size: 30px;
+            }
+            & img {
+                width: 100%;
+            }
+          
+        }
+    }
+
+    @media (min-width:480px) {
+        .vistazos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+@media (min-width:480px) {
+    .mult {
+        & h2 {
+            background-color: $color-subtitulos;
+            max-width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            font-size: 40px;
+        }
+        
+        & img {
+            width: 100px;
+            margin-top: -90px;
+            margin-left: 10px;
+        }
+    }
+    
+    .vid {
+        font-size: 30px;
+        padding: 10px;
+        color: $color-subtitulos;
+    }
+}
+
+
+@media (min-width:768px){
+    .footer-mult {
+        height: 200px;
+
+        & h2 {
+            font-size: 50px;
+        }
+    }
+ }
+
+ @media (min-width:480px){
+    .socio {
+        & img {
+            width:100%;
+            height: 200px;
+        }
+        & h2 {
+            font-size: 20px;
+            margin-left: 30px;
+            color: rgb(250, 252, 252);
+            position: absolute;
+            transform: translate(300px);
+            transition: 8s;
+        }
+    }
+}
+@media (min-width:768px){
+    .socio {
+        & img {
+            width:100%;
+            height: 200px;
+        }
+        & h2 {
+            font-size: 40px;
+            margin-left: 30px;
+            color: rgb(250, 252, 252);
+            position: absolute;
+            transform: translate(470px);
+            transition: 8s;
+        }
+    }
+}
+@media (min-width:1024px){
+    .socio {
+        & img {
+            width:100%;
+            height: 200px;
+        }
+        & h2 {
+            font-size: 40px;
+            margin-left: 30px;
+            color: rgb(250, 252, 252);
+            position: absolute;
+            transform: translate(700px);
+            transition: 8s;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .pie {
+        & h2 {
+            font-size: 40px;
+            color: white;
+        }
+    }
+}
+
+
+@media (min-width:768px){
+    .cancha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(60deg, black 60%, grey);
+        max-width: 100%;
+        height: 100vh;
+    }
+    .river-id {
+        & h2 {
+            font-size: 60px;
+            color: rgb(248, 245, 245);
+        }
+        
+        & h3 {
+            font-size: 30px;
+            color: white;
+            padding-top: 20px;
+            margin: 10px;
+        } 
+    }
+
+    .ingr__usuario label {
+        font-family: arial;
+        color: white;
+        margin: 10px;
+    }
+    .cancha img {
+        width: 400px;
+        padding: 20px;
+    }
+   
+}
+@media (min-width:1024px) {
+
+    .cancha {
+        height: 130vh;
+        
+        & img {
+            width: 600px;
+            padding: 20px;
+        }
+    }
+    .river-id {
+        & h2 {
+            font-size: 70px;
+          
+        }
+        
+        & h3 {
+            font-size: 40px;
+          
+    }
+    }
+}
