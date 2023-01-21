@@ -704,81 +704,6 @@ label {
   gap: 5px;
 }
 
-.pretemporada {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5px;
-  border: 2px solid rgb(75, 7, 246);
-  width: 1000px;
-  height: 520px;
-  padding: 5px;
-  margin: 5px;
-}
-.pretemporada h2 {
-  font-size: 30px;
-  color: red;
-  padding: 5px;
-}
-.pretemporada p {
-  font-size: 20px;
-  padding: 5px;
-}
-.pretemporada img {
-  width: 600px;
-}
-
-.fixture {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5px;
-  border: 2px solid rgb(75, 7, 246);
-  width: 1000px;
-  height: 520px;
-  padding: 5px;
-  margin: 5px;
-}
-.fixture h2 {
-  font-size: 30px;
-  color: red;
-  padding: 5px;
-}
-.fixture p {
-  font-size: 20px;
-  padding: 5px;
-}
-.fixture img {
-  width: 600px;
-}
-
-.selectivo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5px;
-  border: 2px solid rgb(75, 7, 246);
-  width: 1000px;
-  height: 520px;
-  padding: 10px;
-  margin: 5px;
-}
-.selectivo h2 {
-  font-size: 30px;
-  color: red;
-  padding: 5px;
-}
-.selectivo p {
-  font-size: 20px;
-  padding: 5px;
-}
-.selectivo img {
-  width: 600px;
-}
-
 /*------------seccion futbol.html -----------*/
 .futbol {
   display: flex;
@@ -1191,6 +1116,78 @@ label {
     padding: 5px;
   }
   .club img {
+    width: 600px;
+  }
+  .pretemporada {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid rgb(75, 7, 246);
+    width: 1000px;
+    height: 520px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .pretemporada h2 {
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+  }
+  .pretemporada p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .pretemporada img {
+    width: 600px;
+  }
+  .fixture {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid rgb(75, 7, 246);
+    width: 1000px;
+    height: 520px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .fixture h2 {
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+  }
+  .fixture p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .fixture img {
+    width: 600px;
+  }
+  .selectivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid rgb(75, 7, 246);
+    width: 1000px;
+    height: 520px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .selectivo h2 {
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+  }
+  .selectivo p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .selectivo img {
     width: 600px;
   }
 }
