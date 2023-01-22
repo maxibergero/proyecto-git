@@ -132,6 +132,18 @@
     }
 }
 
+@media (min-width:480px) {
+    input {
+        font-size: 25px;
+        
+    }
+    
+    label {
+        font-size: 25px;
+      
+    }
+}
+
 @media (min-width:1024px) {
     .observacion {
         display: flex;
@@ -254,6 +266,19 @@
             width: 600px;
         }
     }
+}
+
+@media (min-width:480px){
+    .contactos {
+        & a {
+            display: flex;
+            padding: 5px;
+            font-size: 20px;
+            margin-left: 30px;
+            color:white;
+    
+        }
+}
 }
 
     @media (min-width:480px) {

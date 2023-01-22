@@ -131,6 +131,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 .entero img {
   width: 200px;
@@ -139,6 +140,9 @@
 .contactos a {
   display: flex;
   padding: 5px;
+  font-size: 15px;
+  margin-left: 30px;
+  color: white;
 }
 .contactos li {
   padding-left: 10px;
@@ -178,6 +182,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 .riv img {
   width: 80px;
@@ -212,6 +217,9 @@
 .footer-mult i {
   padding: 5px;
   font-size: 20px;
+}
+.footer-mult a {
+  color: red;
 }
 
 /*------------plantel----------------*/
@@ -407,11 +415,11 @@
 /*-------seccion-futbol------------*/
 .monterrey {
   display: grid;
-  grid-template-columns: 90px 90px;
+  grid-template-columns: 100px 100px;
   grid-template-rows: 40px 70px;
   grid-template-areas: "titulo titulo" "escudo subtitulo";
   border: 1px solid black;
-  width: 190px;
+  width: 210px;
   padding: 5px;
 }
 .monterrey h4 {
@@ -421,21 +429,19 @@
 .monterrey h5 {
   grid-area: subtitulo;
   align-self: flex-start;
-  padding-top: 10px;
 }
 .monterrey h6 {
   grid-area: subtitulo;
   align-self: center;
-  gap: 2px;
 }
 
 .america {
   display: grid;
-  grid-template-columns: 90px 90px;
+  grid-template-columns: 100px 100px;
   grid-template-rows: 40px 70px;
   grid-template-areas: "titulo titulo" "escudo subtitulo";
   border: 1px solid black;
-  width: 190px;
+  width: 210px;
   padding: 5px;
 }
 .america h4 {
@@ -449,21 +455,19 @@
 .america h5 {
   grid-area: subtitulo;
   align-self: flex-start;
-  padding-top: 10px;
 }
 .america h6 {
   grid-area: subtitulo;
   align-self: center;
-  gap: 2px;
 }
 
 .millonarios {
   display: grid;
-  grid-template-columns: 90px 90px;
+  grid-template-columns: 100px 100px;
   grid-template-rows: 40px 70px;
   grid-template-areas: "titulo titulo" "escudo subtitulo";
   border: 1px solid black;
-  width: 190px;
+  width: 210px;
   padding: 5px;
 }
 .millonarios h4 {
@@ -477,12 +481,10 @@
 .millonarios h5 {
   grid-area: subtitulo;
   align-self: flex-start;
-  padding-top: 10px;
 }
 .millonarios h6 {
   grid-area: subtitulo;
   align-self: center;
-  gap: 2px;
 }
 
 .galeria {
@@ -538,10 +540,6 @@
   width: 100%;
 }
 
-hr {
-  margin: 10px;
-}
-
 .noticias-2 {
   margin: 20px;
   display: flex;
@@ -556,10 +554,6 @@ hr {
 }
 .noticias-2 img {
   width: 100%;
-}
-
-hr {
-  margin: 10px;
 }
 
 .noticias-3 {
@@ -578,8 +572,10 @@ hr {
   width: 100%;
 }
 
-hr {
+.plantel__subtitulo h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: red;
+  font-size: 30px;
 }
 
 /*------- seccion formulario----------*/
@@ -592,18 +588,20 @@ hr {
 
 input {
   font-size: 15px;
+  margin-top: 20px;
 }
 
 label {
   font-size: 20px;
   font-family: "Fasthand", cursiva;
   color: red;
+  margin-top: 20px;
 }
 
 /*---------seccion articulos---------*/
 .articulos {
   font-family: "Jost", sans-serif;
-  color: red;
+  color: gray;
   font-size: 30px;
   margin: 10px;
 }
@@ -738,10 +736,11 @@ label {
 }
 
 .noticias-reserva {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
-  color: rgb(41, 40, 40);
+  color: gray;
   margin-left: 10px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .reserva img {
@@ -786,7 +785,7 @@ label {
 /*-----------resultado-------------*/
 .river__gano {
   display: flex;
-  gap: 5px;
+  gap: 20px;
   color: red;
 }
 
@@ -796,16 +795,22 @@ label {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  gap: 5px;
 }
 .river img:hover {
   border: 2px solid red;
   border-radius: 40%;
 }
 
+.vistazos {
+  margin-top: 20px;
+}
+
 /*----------------etiquetas-------------------*/
 .etiquetas h2 {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: gray;
   padding: 10px;
 }
 .etiquetas a {
@@ -825,13 +830,13 @@ label {
   font-size: 25px;
 }
 .mult img {
-  width: 60px;
+  width: 50px;
   margin-top: -90px;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
-.vid {
-  font-size: 30px;
+.vid h3 {
+  font-size: 40px;
   padding: 10px;
   color: gray;
 }
@@ -1087,6 +1092,14 @@ label {
     justify-self: center;
   }
 }
+@media (min-width: 480px) {
+  input {
+    font-size: 25px;
+  }
+  label {
+    font-size: 25px;
+  }
+}
 @media (min-width: 1024px) {
   .observacion {
     display: flex;
@@ -1189,6 +1202,15 @@ label {
   }
   .selectivo img {
     width: 600px;
+  }
+}
+@media (min-width: 480px) {
+  .contactos a {
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 30px;
+    color: white;
   }
 }
 @media (min-width: 480px) {

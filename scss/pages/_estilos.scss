@@ -61,11 +61,10 @@
     & img {
         width: 100%;
     }
+    
 }
 
-hr {
-    margin: 10px;
-}
+
 
 .noticias-2 {
     margin: 20px;
@@ -85,9 +84,6 @@ hr {
     }
 }
 
-hr {
-    margin: 10px;
-}
 
 .noticias-3 {
     margin: 20px;
@@ -107,9 +103,13 @@ hr {
     }
 }
 
-hr {
-    color: $color-primario;
+.plantel__subtitulo h2 {
+    font-family: $fuente-subtitulos;
+    color: red;
+    font-size: 30px;
 }
+
+
 
 /*------- seccion formulario----------*/
 
@@ -122,19 +122,21 @@ hr {
 
 input {
     font-size: 15px;
+    margin-top: 20px;
 }
 
 label {
     font-size: 20px;
     font-family: 'Fasthand', cursiva;
     color: $color-primario;
+    margin-top: 20px;
 }
 
 /*---------seccion articulos---------*/
 .articulos {
 
     font-family: 'Jost', sans-serif;
-    color: $color-primario;
+    color: $color-subtitulos;
     font-size: 30px;
     margin: 10px;
 }
@@ -294,10 +296,11 @@ label {
 }
 
 .noticias-reserva {
+    font-family:$fuente-subtitulos;
     font-size: 30px;
-    color: rgb(41, 40, 40);
+    color:$color-subtitulos;
     margin-left: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 .reserva {
     & img {
@@ -358,8 +361,9 @@ label {
 /*-----------resultado-------------*/
 .river__gano {
     display: flex;
-    gap: 5px;
+    gap: 20px;
     color: $color-primario;
+    
 }
 
 .river {
@@ -368,11 +372,17 @@ label {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    gap:5px;
+   
 
     & img:hover {
         border: 2px solid $color-primario;
         border-radius: 40%;
         }
+}
+
+.vistazos {
+    margin-top: 20px;
 }
 
 /*----------------etiquetas-------------------*/
@@ -381,6 +391,7 @@ label {
     & h2 {
         font-size: 30px;
         font-family:$fuente-subtitulos;
+        color: $color-subtitulos;
         padding: 10px;
     }
     
@@ -409,14 +420,14 @@ label {
     }
     
     & img {
-        width: 60px;
+        width: 50px;
         margin-top: -90px;
-        margin-left: 10px;
+        margin-left: 2px;
     }
 }
 
-.vid {
-    font-size: 30px;
+.vid h3{
+    font-size: 40px;
     padding: 10px;
     color: $color-subtitulos;
 }

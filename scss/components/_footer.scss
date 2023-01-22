@@ -29,6 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
     & img {
         width: 200px;
     }
@@ -37,6 +38,10 @@
     & a {
         display: flex;
         padding: 5px;
+        font-size: 15px;
+        margin-left: 30px;
+        color:white;
+
     }
     
     & li {
@@ -47,6 +52,7 @@
         font-size: 15px;
         list-style: none;
         text-decoration: none;
+        
         
     }
     &__telefonos {
@@ -72,6 +78,7 @@
         list-style: none;
         text-decoration: none;
         
+        
     }
 }
 
@@ -84,6 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 
 
     & img {
@@ -125,5 +133,8 @@
      & i {
      padding: 5px;
      font-size: 20px;
+     }
+     & a {
+        color: red;
      }
 }

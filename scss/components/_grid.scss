@@ -241,12 +241,12 @@
 /*-------seccion-futbol------------*/
 .monterrey {
     display: grid;
-    grid-template-columns: 90px 90px;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 40px 70px;
     grid-template-areas: "titulo titulo"
         "escudo subtitulo";
     border: 1px solid black;
-    width: 190px;
+    width: 210px;
     padding: 5px;
 
     & h4 {
@@ -258,25 +258,25 @@
     & h5 {
         grid-area: subtitulo;
         align-self: flex-start;
-        padding-top: 10px;
+       
     }
     
     & h6 {
         grid-area: subtitulo;
         align-self: center;
-        gap: 2px;
+       
     }
 
 }
 
 .america {
     display: grid;
-    grid-template-columns: 90px 90px;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 40px 70px;
     grid-template-areas: "titulo titulo"
         "escudo subtitulo";
     border: 1px solid black;
-    width: 190px;
+    width: 210px;
     padding: 5px;
 
     & h4 {
@@ -292,24 +292,24 @@
     & h5 {
         grid-area: subtitulo;
         align-self: flex-start;
-        padding-top: 10px;
+        
     }
     
     & h6 {
         grid-area: subtitulo;
         align-self: center;
-        gap: 2px;
+       
     }
 }
 
 .millonarios {
     display: grid;
-    grid-template-columns: 90px 90px;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 40px 70px;
     grid-template-areas: "titulo titulo"
         "escudo subtitulo";
     border: 1px solid black;
-    width: 190px;
+    width: 210px;
     padding: 5px;
 
     & h4 {
@@ -326,12 +326,12 @@
     & h5 {
         grid-area: subtitulo;
         align-self: flex-start;
-        padding-top: 10px;
+       
     }
     
     & h6 {
         grid-area: subtitulo;
         align-self: center;
-        gap: 2px;
+       
     }
 }
