@@ -961,7 +961,7 @@ label {
   align-items: center;
   background: linear-gradient(60deg, rgb(93, 29, 190) 60%, grey);
   max-width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .river-id h2 {
