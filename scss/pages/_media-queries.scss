@@ -14,17 +14,23 @@
 
  
  @media (min-width:480px) {
-    .menu {
+    .menu:hover .listado {
+        display: none;
+    }
+    .menu i {
         display: none;
     }
 
     .nav {
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: $color-primario;
         max-width: 100%;
         height: 60px;
+        position: relative;
+       
 
         & a {
             display: block;
@@ -33,10 +39,14 @@
             font-size: 20px;
             color: black;
             text-decoration: none;
+            list-style: none;
+            
             &:hover {
                 color: $color-botoneshover;
             }
         }
+
+      
     }
 }
 
@@ -143,6 +153,117 @@
       
     }
 }
+
+@media (min-width:768px) {
+    
+.club {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:600px;
+    height: 580px;
+    margin: 5px;
+    border: 2px solid rgb(75, 7, 246);
+
+    & h2 {
+        font-size: 30px;
+        color: $color-primario;
+    
+    }
+    
+    & p {
+        font-size: 20px;
+    }
+    
+    & img {
+        width: 100%;
+    }
+}
+
+.pretemporada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
+
+    & h2 {
+        font-size: 30px;
+        color: $color-primario;
+    
+    }
+    
+    & p {
+        font-size: 20px;
+    }
+    
+    & img {
+        width: 100%;
+    }
+
+}
+
+.fixture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
+
+    & h2 {
+        font-size: 30px;
+        color: $color-primario;
+    
+    }
+    
+    & p {
+        font-size: 20px;
+    }
+    
+    & img {
+        width: 100%;
+    }
+
+}
+
+.selectivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
+
+    & h2 {
+        font-size: 30px;
+        color: $color-primario;
+    
+    }
+    
+    & p {
+        font-size: 20px;
+    }
+    
+    & img {
+        width: 100%;
+    }
+
+}
+}
+
 
 @media (min-width:1024px) {
     .observacion {
@@ -323,7 +444,7 @@
     
     .vid {
         font-size: 30px;
-        padding: 10px;
+        padding-top: 40px;
         color: $color-subtitulos;
     }
 }
@@ -404,13 +525,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(60deg, black 60%, grey);
+        background: linear-gradient(60deg, rgb(93, 29, 190) 60%, grey);
         max-width: 100%;
         height: 100vh;
     }
     .river-id {
         & h2 {
-            font-size: 60px;
+            font-size: 80px;
             color: rgb(248, 245, 245);
         }
         

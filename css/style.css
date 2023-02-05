@@ -488,6 +488,7 @@
 }
 
 .galeria {
+  padding-top: 60px;
   display: none;
 }
 
@@ -612,11 +613,11 @@ label {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: 2px solid rgb(75, 7, 246);
-  width: 150px;
-  height: 270px;
-  padding: 5px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
   margin: 5px;
+  border: 2px solid rgb(75, 7, 246);
 }
 .club h2 {
   font-size: 12px;
@@ -635,10 +636,11 @@ label {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: 2px solid rgb(61, 22, 158);
-  width: 150px;
-  height: 270px;
-  padding: 5px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid rgb(75, 7, 246);
+  margin: 5px;
 }
 .pretemporada h2 {
   font-size: 12px;
@@ -657,10 +659,11 @@ label {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: 2px solid rgb(61, 22, 158);
-  width: 150px;
-  height: 270px;
-  padding: 5px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid rgb(75, 7, 246);
+  margin: 5px;
 }
 .fixture h2 {
   font-size: 12px;
@@ -679,10 +682,11 @@ label {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: 2px solid rgb(61, 22, 158);
-  width: 150px;
-  height: 270px;
-  padding: 5px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid rgb(75, 7, 246);
+  margin: 5px;
 }
 .selectivo h2 {
   font-size: 12px;
@@ -697,8 +701,9 @@ label {
 
 .observacion {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -725,7 +730,8 @@ label {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 /*-----------seccion-reserva-----------*/
@@ -895,7 +901,7 @@ label {
 .carnet p {
   font-size: 20px;
   margin-top: 30px;
-  padding: 10px;
+  padding: 30px;
 }
 .carnet__img {
   padding-top: 60px;
@@ -953,17 +959,18 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(60deg, black 60%, grey);
+  background: linear-gradient(60deg, rgb(93, 29, 190) 60%, grey);
   max-width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 
 .river-id h2 {
-  font-size: 50px;
+  font-size: 70px;
   color: rgb(248, 245, 245);
+  padding-top: 120px;
 }
 .river-id h3 {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   padding-top: 20px;
   margin: 10px;
@@ -1000,7 +1007,10 @@ label {
   }
 }
 @media (min-width: 480px) {
-  .menu {
+  .menu:hover .listado {
+    display: none;
+  }
+  .menu i {
     display: none;
   }
   .nav {
@@ -1010,6 +1020,7 @@ label {
     background-color: red;
     max-width: 100%;
     height: 60px;
+    position: relative;
   }
   .nav a {
     display: block;
@@ -1018,6 +1029,7 @@ label {
     font-size: 20px;
     color: black;
     text-decoration: none;
+    list-style: none;
   }
   .nav a:hover {
     color: white;
@@ -1098,6 +1110,92 @@ label {
   }
   label {
     font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .club {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    margin: 5px;
+    border: 2px solid rgb(75, 7, 246);
+  }
+  .club h2 {
+    font-size: 30px;
+    color: red;
+  }
+  .club p {
+    font-size: 20px;
+  }
+  .club img {
+    width: 100%;
+  }
+  .pretemporada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
+  }
+  .pretemporada h2 {
+    font-size: 30px;
+    color: red;
+  }
+  .pretemporada p {
+    font-size: 20px;
+  }
+  .pretemporada img {
+    width: 100%;
+  }
+  .fixture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
+  }
+  .fixture h2 {
+    font-size: 30px;
+    color: red;
+  }
+  .fixture p {
+    font-size: 20px;
+  }
+  .fixture img {
+    width: 100%;
+  }
+  .selectivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    height: 580px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
+  }
+  .selectivo h2 {
+    font-size: 30px;
+    color: red;
+  }
+  .selectivo p {
+    font-size: 20px;
+  }
+  .selectivo img {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -1246,7 +1344,7 @@ label {
   }
   .vid {
     font-size: 30px;
-    padding: 10px;
+    padding-top: 40px;
     color: gray;
   }
 }
@@ -1312,12 +1410,12 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(60deg, black 60%, grey);
+    background: linear-gradient(60deg, rgb(93, 29, 190) 60%, grey);
     max-width: 100%;
     height: 100vh;
   }
   .river-id h2 {
-    font-size: 60px;
+    font-size: 80px;
     color: rgb(248, 245, 245);
   }
   .river-id h3 {

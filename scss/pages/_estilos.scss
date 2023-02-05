@@ -1,4 +1,5 @@
 .galeria {
+    padding-top: 60px;
     display: none;
 }
 
@@ -147,11 +148,11 @@ label {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 2px solid rgb(75, 7, 246);
-    width: 150px;
-    height: 270px;
-    padding: 5px;
+    width:300px;
+    height: 300px;
+    padding: 10px;
     margin: 5px;
+    border: 2px solid rgb(75, 7, 246);
 
     & h2 {
         font-size: 12px;
@@ -174,10 +175,11 @@ label {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 2px solid rgb(61, 22, 158);
-    width: 150px;
-    height: 270px;
-    padding: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
 
     & h2 {
         font-size: 12px;
@@ -201,10 +203,11 @@ label {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 2px solid rgb(61, 22, 158);
-    width: 150px;
-    height: 270px;
-    padding: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
 
     & h2 {
         font-size: 12px;
@@ -228,10 +231,11 @@ label {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 2px solid rgb(61, 22, 158);
-    width: 150px;
-    height: 270px;
-    padding: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid rgb(75, 7, 246);
+    margin: 5px;
 
     & h2 {
         font-size: 12px;
@@ -251,8 +255,9 @@ label {
 
 .observacion {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
 }
 
@@ -284,7 +289,8 @@ label {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 40px;
+    padding-top:60px;
+    padding-bottom: 20px;
 }
 
 /*-----------seccion-reserva-----------*/
@@ -492,7 +498,8 @@ label {
     & p {
         font-size: 20px;
         margin-top: 30px;
-        padding: 10px;
+        padding: 30px;
+        
         
     }
     
@@ -540,8 +547,6 @@ label {
     & h2 {
         font-size: 25px;
         color: white;
-        
-    
     }
     &__sponsor img {
         
@@ -563,18 +568,19 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(60deg, black 60%, grey);
+    background: linear-gradient(60deg, rgb(93, 29, 190) 60%, grey);
     max-width: 100%;
-    height: 80vh;
+    height: 90vh;
 }
 .river-id {
     & h2 {
-        font-size: 50px;
+        font-size: 70px;
         color: rgb(248, 245, 245);
+        padding-top:120px;
     }
     
     & h3 {
-        font-size: 20px;
+        font-size: 30px;
         color: white;
         padding-top: 20px;
         margin: 10px;
